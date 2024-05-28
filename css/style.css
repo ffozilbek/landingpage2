@@ -18,7 +18,10 @@ body {
     margin: 0;
     font-size: 16px;
     line-height: 1.5;
-    font-family: "Roboto","Arial",sans-serif;
+    font-family: "Sen", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
     flex-direction: column;
     background-color: #fff;
     color: #222;
@@ -31,10 +34,91 @@ img {
 
 /* CONTAINER */
 .container {
-    max-width: 1200px;
+    max-width: 1568px;
     width: 100%;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 64px;
+    padding-right: 64px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.main {
+    padding: 65px 0px;
+}
+
+.top-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 72px;
+}
+.top-left {
+    width: 444px;
+    margin-right: 17px;
+}
+.top-left-header {
+    font-size: 56px;
+    line-height: 80px;
+    color:#252525;
+    margin-bottom: 24px;
+}
+.top-left-paragraph {
+    font-size: 26px;
+    line-height: normal;
+    color: #252525cc;
+    margin-bottom: 24px;
+}
+.top-left-link {
+    padding: 16px 32px;
+    background-color: #252525;
+    color:#fff;
+    border-radius: 16px;
+    text-decoration: none;
+    display: inline-block;
+}
+.top-right {
+    display: flex;
+}
+.top-right-first {
+    width: 408px;
+    height: 480px;
+    margin-right: 35px;
+
+}
+.top-right-left {
+    width: 408px;
+    height: 480px;
+    margin-top: 152px;
+}
+
+.bottom-section-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.bottom-section-item:nth-child(1)::before {
+    content: "01";
+    display: block;
+    font-size: 40px;
+    color: #25252540;
+}
+.bottom-section-item:nth-child(2)::before {
+    content: "02";
+    display: block;
+    font-size: 40px;
+    color: #25252540;
+}
+.bottom-section-item:nth-child(3)::before {
+    content: "03";
+    display: block;
+    font-size: 40px;
+    color: #25252540;
+}
+
+.bottom-section-item:not(:last-child) {
+    margin-right: 40px;
 }
